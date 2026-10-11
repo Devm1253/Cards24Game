@@ -1,31 +1,99 @@
+
+/* Main background */
 .root {
     -fx-background-color: #1C1D25;
     -fx-font-family: "Segoe UI", "Arial";
 }
 
+.game-container {
+    -fx-background-color: #1C1D25;
+}
+
+/* Title */
 .game-title {
     -fx-font-size: 38px;
     -fx-font-weight: bold;
     -fx-text-fill: #C4A8EB;
 }
 
+/* Subtitle */
 .subtitle {
     -fx-font-size: 15px;
     -fx-text-fill: #A7A7B4;
 }
 
+/* Divider */
+.divider {
+    -fx-stroke: #454653;
+}
+
+/* Card area */
+.cards-container {
+    -fx-alignment: center;
+    -fx-padding: 20px 0px 20px 0px;
+}
+
+/* Expression label */
 .expression-label {
     -fx-font-size: 15px;
     -fx-text-fill: #F3F0FA;
 }
 
-.divider {
-    -fx-stroke: #454653;
-}
-
+/* Expression input */
 .expression-field {
     -fx-background-color: #30313B;
-    -fx-text-fill: white;
-    -fx-prompt-text-fill: #9E9EAC;
+    -fx-text-fill: #FFFFFF;
     -fx-border-color: #765A9E;
+    -fx-border-width: 1.5px;
     -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 15px;
+}
+
+.expression-field:focused {
+    -fx-border-color: #C4A8EB;
+    -fx-border-width: 2px;
+}
+
+/* Shared button styling */
+.verify-button, .refresh-button {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 140px;
+    -fx-pref-height: 45px;
+    -fx-cursor: hand;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+/* Verify button */
+.verify-button {
+    -fx-background-color: #A88ADB;
+    -fx-text-fill: #1C1D25;
+}
+
+.verify-button:hover {
+    -fx-background-color: #C4A8EB;
+}
+
+.verify-button:pressed {
+    -fx-background-color: #765A9E;
+}
+
+/* Refresh button */
+.refresh-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #C4A8EB;
+    -fx-border-color: #765A9E;
+    -fx-border-width: 2px;
+}
+
+.refresh-button:hover {
+    -fx-background-color: #30313B;
+    -fx-border-color: #C4A8EB;
+}
+
+.refresh-button:pressed {
+    -fx-background-color: #454653;
+}
