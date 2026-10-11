@@ -9,71 +9,44 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-<VBox alignment="CENTER"
-      prefHeight="650.0"
-      prefWidth="694.0"
-      spacing="20.0"
-      styleClass="game-container"
-      stylesheets="@style.css"
-      xmlns:fx="http://javafx.com/fxml/1"
-      xmlns="http://javafx.com/javafx/21"
-      fx:controller="zex.com.Card24Controller">
+<VBox alignment="CENTER" prefHeight="650.0" prefWidth="694.0" spacing="20.0" styleClass="game-container" stylesheets="@style.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zex.com.Card24Controller">
 
     <padding>
-        <Insets top="30" bottom="30" left="30" right="30"/>
+        <Insets bottom="30" left="30" right="30" top="30" />
     </padding>
 
     <children>
 
         <!-- Title -->
-        <Label text="CARD 24" styleClass="game-title"/>
+        <Label styleClass="game-title" text="CARD 24" />
 
         <!-- Instructions -->
-        <Label text="Use all four cards to make 24"
-               styleClass="subtitle"/>
+        <Label styleClass="subtitle" text="Use all four cards to make 24" />
 
         <!-- Divider -->
-        <Line startX="-250" endX="250" styleClass="divider"/>
+        <Line endX="250" startX="-250" styleClass="divider" />
 
         <!-- Playing Cards -->
         <HBox alignment="CENTER" spacing="15" styleClass="cards-container">
             <children>
-                <ImageView fx:id="card1" fitWidth="110" fitHeight="160"
-                           preserveRatio="true"/>
-                <ImageView fx:id="card2" fitWidth="110" fitHeight="160"
-                           preserveRatio="true"/>
-                <ImageView fx:id="card3" fitWidth="110" fitHeight="160"
-                           preserveRatio="true"/>
-                <ImageView fx:id="card4" fitWidth="110" fitHeight="160"
-                           preserveRatio="true"/>
+                <ImageView fx:id="card1" fitHeight="160" fitWidth="110" preserveRatio="true" />
+                <ImageView fx:id="card2" fitHeight="160" fitWidth="110" preserveRatio="true" />
+                <ImageView fx:id="card3" fitHeight="160" fitWidth="110" preserveRatio="true" />
+                <ImageView fx:id="card4" fitHeight="160" fitWidth="110" preserveRatio="true" />
             </children>
         </HBox>
 
-        <!-- Expression Label -->
-        <Label text="Enter an expression using each card once"
-               styleClass="expression-label"/>
+        <Label styleClass="expression-label" text="Enter an expression using each card once" />
 
-        <!-- Expression Input -->
-        <TextField fx:id="expressionField"
-                   promptText="Example: 6 * 4 * (3 - 2)"
-                   maxWidth="450"
-                   prefHeight="45"
-                   styleClass="expression-field"/>
 
-        <!-- Buttons -->
+        <TextField fx:id="textField" maxWidth="450" prefHeight="45" styleClass="expression-field" />
+
+
         <HBox alignment="CENTER" spacing="15">
             <children>
-                <Button text="Verify"
-                        onAction="#handleVerify"
-                        styleClass="verify-button"/>
+                <Button onAction="#handleVerify" styleClass="verify-button" text="Verify" />
 
-                <Button text="Refresh"
-                        onAction="#handleRefresh"
-                        styleClass="refresh-button"/>
-
-                <Button text="Solve"
-                        onAction="#handleSolve"
-                        styleClass="solve-button"/>
+                <Button onAction="#handleRefresh" styleClass="refresh-button" text="Refresh" />
             </children>
         </HBox>
 
