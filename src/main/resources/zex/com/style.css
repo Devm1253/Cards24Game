@@ -1,0 +1,31 @@
+.root {
+    -fx-background-color: #1C1D25;
+    -fx-font-family: "Segoe UI", "Arial";
+}
+
+.game-title {
+    -fx-font-size: 38px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #C4A8EB;
+}
+
+.subtitle {
+    -fx-font-size: 15px;
+    -fx-text-fill: #A7A7B4;
+}
+
+.expression-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: #F3F0FA;
+}
+
+.divider {
+    -fx-stroke: #454653;
+}
+
+.expression-field {
+    -fx-background-color: #30313B;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #9E9EAC;
+    -fx-border-color: #765A9E;
+    -fx-border-radius: 8px;
